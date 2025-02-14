@@ -39,16 +39,16 @@ if st.session_state["authentication_status"]:
     # On indique au programme quoi faire en fonction du choix
     if selection == "Accueil":
         st.title("Bienvenue sur ma page !")
-        st.image(r"C:\Users\Claire&Matthieu\Downloads\bravo.jpg")
+        st.image("bravo.jpg")
     elif selection == "Des photos de chats":
         st.title("Ils sont pas trop choupinous ???")
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.image(r"C:\Users\Claire&Matthieu\Downloads\chat1.jpg")
+            st.image("chat1.jpg")
         with col2:
-            st.image(r"C:\Users\Claire&Matthieu\Downloads\chat2.jpg")
+            st.image("chat2.jpg")
         with col3:
-            st.image(r"C:\Users\Claire&Matthieu\Downloads\chat3.jpg")
+            st.image("chat3.jpg")
 
 
     elif st.session_state["authentication_status"] is False:
